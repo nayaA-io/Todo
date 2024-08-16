@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(
+    227deg,
+    #60fc00,
+    #063af1,
+    #f6341a,
+    #f2f204,
+    #f204ee,
+    #04f2da,
+    #ac04f2
+  );
+  background-size: 1400% 1400%;
+
+  -webkit-animation: gradient 29s ease infinite;
+  -moz-animation: gradient 29s ease infinite;
+  animation: gradient 29s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 2% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 2% 0%;
+  }
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  background: radial-gradient(
+      178.94% 106.41% at 26.42% 106.41%,
+      #fff7b1 0%,
+      rgba(255, 255, 255, 0) 71.88%
+    )
+    #ffffff;
+  box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01),
+    0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09),
+    0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.todo__form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form__row {
+}
+
+.input {
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+
+  height: 30px;
+  padding: 0 60px 0 20px;
+}
+
+.add__btn {
+  height: 30px;
+  padding: 0 30px 0 20px;
+  background-color: rgb(66, 66, 179);
+  border: 1px solid rgb(66, 66, 179);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+input {
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  list-style: none;
+}
+
+.list__item {
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.list__label {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  color: #333;
+  transition: all 0.3s ease;
+}
+.list__label input[type="checkbox"] {
+  margin-right: 10px;
+}
+.list__item.completed .list__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.del__btn {
+  height: 30px;
+  padding: 0 20px 0 20px;
+  background-color: rgb(243, 4, 4);
+  border: 1px solid #f60707;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+/*  */
